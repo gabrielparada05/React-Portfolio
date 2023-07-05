@@ -31,5 +31,22 @@ export const projects = [
       image: "./weather.jpg",
       link: "https://gabrielparada05.github.io/forecast-C6/",
     },
+    {
+      title: "Learning Words",
+      subtitle: "Full Stack",
+      description:
+        "Learning Words is an interactive web application that lets the user search for words, and it returns some information about words, such as type (noun, verb, etc), definition, and synonyms. ",
+      image: "./word.jpg",
+      link: "https://zaingova.github.io/group-project-learning-words/",
+    },
   ];
   
+  export const skills = [
+    "JavaScript",
+    "React",
+    "Node",
+    "SQL",
+    "NoSQL",
+    "Material UI",
+    "Restful API",
+  ];
