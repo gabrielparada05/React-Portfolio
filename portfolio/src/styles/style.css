@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-selected {
+    background-color: #2d3748;
+    color: #ffffff;
+    font-size: medium;
+    
+  }
+
+/* Primary Color */
+:root {
+    --primary-color: #0099FF;
+  }
+  
+  /* Secondary Color */
+  :root {
+    --secondary-color: #FFFFFF;
+  }
+  
+  /* Accent Color */
+  :root {
+    --accent-color: #FF6C00;
+  }
+  
+  /* Complementary Color */
+  :root {
+    --complementary-color: #333333;
+  }
+  
+  /* Example Usage */
+  body {
+    background-color: var(--secondary-color);
+  }
+  
+  h1 {
+    color: var(--primary-color);
+  }
+  
+  p {
+    color: var(--secondary-color);
+  }
+  
+  a {
+    color: var(--accent-color);
+  }

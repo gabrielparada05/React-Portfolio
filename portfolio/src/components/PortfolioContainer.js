@@ -24,15 +24,16 @@ export default function PortfolioContainer() {
     }
     return <Contact />;
   };
-
+  
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div >
       {/* We are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Here we are calling the renderPage method which will return a component  */}
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} >   </NavTabs>
       {renderPage()}
+      {/* Here we are calling the renderPage method which will return a component  */}
+     
       <Footer  />
     </div>
   );

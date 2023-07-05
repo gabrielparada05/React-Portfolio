@@ -1,10 +1,53 @@
 import React from 'react';
+import { useFormik } from 'formik';
+import { useForm } from 'react-hook-form';
+
+
+
+
+
+const validate = (values) => {
+  const errors = {}
+
+  if (!values.email) {
+    errors.email = 'Required'
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'Invalid email address'
+  }
+
+  return errors
+}
+
 
 export default function Contact() {
+// validate email
+  const formik = useFormik({
+    initialValues: {
+      email: '',
+    },
+    validate,
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2))
+    },
+  })
+
+/// validate message 
+
+const {
+  register,
+  handleSubmit,
+  formState: { errors },
+} = useForm();
+
+const onSubmit = (data) => {
+  // Handle form submission
+  console.log(data);
+};
+
   return (
     <section id="contact" className="relative">
     <div className="flex justify-center">
-      <form
+      <form onSubmit={handleSubmit(onSubmit)}
         name="contact"
         className="flex flex-col w-50">
         <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
@@ -26,7 +69,7 @@ export default function Contact() {
           />
         </div>
         <div className="relative mb-4">
-          <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+          <label for="email"htmlFor="email" className="leading-7 text-sm text-gray-400">
             Email
           </label>
           <input
@@ -34,19 +77,29 @@ export default function Contact() {
             id="email"
             name="email"
             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out hover:brightness-200"
-          />
+            onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} />
+            {formik.touched.email && formik.errors.email && (
+            <span>{formik.errors.email}</span>
+          )}
         </div>
         <div className="relative mb-4">
           <label
             htmlFor="message"
-            className="leading-7 text-sm text-gray-400">
+            className="leading-7 text-sm text-gray-400"
+            name="message"
+            for="message">
             Message
           </label>
           <textarea
             id="message"
-            name="message"
+            name="message"   {...register('message', { required: true, minLength: 5 })}
             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:brightness-200"
-          />
+          />  {errors.message && errors.message.type === 'required' && (
+            <div>This field is required.</div>
+          )}
+          {errors.message && errors.message.type === 'minLength' && (
+            <div>Message must be at least 5 characters.</div>
+          )}
         </div>
         <button
           type="submit"
@@ -58,3 +111,4 @@ export default function Contact() {
   </section>
   );
 }
+

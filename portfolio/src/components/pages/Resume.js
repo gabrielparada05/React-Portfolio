@@ -26,7 +26,7 @@ export default function Resume() {
               <span className="title-font font-medium text-white">
                 {skill.title} 
               </span>
-              <img src={skill.image} className='w-10 flex' />
+              <img src={skill.image}  className='w-10 flex' />
             </div>
           </div>
         ))}
