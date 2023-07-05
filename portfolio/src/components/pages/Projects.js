@@ -1,94 +1,56 @@
 import React from 'react';
-import Bill from '../images/bill.jpg';
-import Password from '../images/password.jpg';
-import Weather from '../images/weather.jpg';
-import Word from '../images/word.jpg';
-import Quiz from '../images/quiz.jpg';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { projects } from "../../data.js";
 
 
-
-
-console.log(Bill);
-console.log(Password);
-console.log(Weather);
-console.log(Word)
-console.log(Quiz)
 
 export default function Projects() {
   return (
-
-    <Container>
-      <Row>
-        <Col>
-        <div className="card1">
-          <a href="https://s2robertson-payment-tracker-2c1497a835bb.herokuapp.com/">
-            <div className="title">
-              <h3>Payment Tracker</h3>
-              <p>MVC</p>
-            </div>
-            <div>
-              <img src={Bill} alt="A dollar bill" />
-            </div>
-          </a>
-        </div>
-        </Col>
-
-        <Col>
-          <div className="card1">
-            <a href="https://gabrielparada05.github.io/Password-generator-C3-UofT/">
-
-              <div className="title">
-                <h3>Password Generator</h3>
-                <p>HTML/Javascript</p>
+<section id="projects" className="text-gray-400 bg-gray-900 body-font">
+  <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+    <div className="flex flex-col w-full mb-20">
+      <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
+        My Projects
+      </h1>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+        As a web developer, I have worked on a diverse range of projects that showcase my skills and passion for creating 
+        exceptional web experiences. From developing interactive web applications to designing responsive websites, 
+        I have always strived for excellence in every project I undertake.
+      </p>
+    </div>
+    <div className="flex flex-col">
+    <div className="flex flex-wrap -m-4">
+      {projects.map((project) => (
+        <a
+          href={project.link}
+          key={project.image}
+          className="sm:w-1/2 w-full p-4 relative"
+        >
+          <div className="relative">
+            <img
+              alt="gallery"
+              className="w-100 h-100 object-cover object-center "
+              src={project.image}
+            />
+          <div className="absolute inset-0 flex items-center justify-center opacity-5 hover:opacity-100 z-10">
+          <div className="px-8 py-10 bg-gray-900 bg-opacity-80 text-white">
+            <h2 className="text-green-400 tracking-widest text-sm title-font font-medium mb-1">
+                  {project.subtitle}
+                </h2>
+                <h1 className="text-white title-font text-lg font-medium mb-3">
+                  {project.title}
+                </h1>
+                <p className="text-gray-400 leading-relaxed">{project.description}</p>
               </div>
-              <div>
-                <img src={Password} alt="Password word" />
-              </div>
-            </a>
-          </div>
-       </Col>
-      </Row>
-      <Row>
-        <Col> <a href="https://gabrielparada05.github.io/Code-Quiz-C4/">
-          <div className="container">
-            <div className="title">
-              <h3>Code Quiz</h3>
-              <p>JavaScript/CSS</p>
-            </div>
-            <div>
-              <img src={Quiz} alt="A person working in a computer" />
             </div>
           </div>
-        </a></Col>
-        <Col>  <a href="https://gabrielparada05.github.io/forecast-C6/">
-          <div className="container">
-            <div className="title">
-              <h3>Weather Dashboard</h3>
-              <p>Full Stack</p>
-            </div>
-            <div>
-              <img src={Weather} alt="Leaves on ground" />
-            </div>
-          </div>
-        </a></Col>
-        <Col> <a href="https://zaingova.github.io/group-project-learning-words/">
-          <div className="container">
-            <div className="title">
-              <h3>Learning Words</h3>
-              <p>Full Stack</p>
-            </div>
-            <div>
-              <img src={Word} alt="Lenses over a book" />
-            </div>
-          </div>
-        </a></Col>
-      </Row>
-    </Container>
+        </a>
+      ))}
+    </div>
+  </div>
 
+  </div>
 
+</section>
 
   );
 }

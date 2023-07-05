@@ -1,10 +1,14 @@
 import React from 'react';
 
 export default function About() {
-  return (
-    <div>
-      <h1>About Page</h1>
-      <p>
+  return ( 
+    <section id="about">
+    <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+      <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white justify-center">
+          Hi, I am Gabriel!
+        </h1>
+        <p className="flex justify-center">
       As a seasoned Manager in Social Services with years of experience leading teams and managing 
       complex projects, I am now pursuing a new career path in Web Development. With a strong foundation in leadership, 
       strategic planning, and problem-solving. I have completed a rigorous Web Development Bootcamp through the 
@@ -13,6 +17,20 @@ export default function About() {
       Through individual and team projects, I gained practical experience developing responsive and dynamic websites and web applications. 
       The skills and knowledge I gained from this program have prepared me well for a successful transition to a career in Web Development.
       </p>
+        <div className="flex justify-center">
+          <a
+            href="#contact"
+            className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+           My Github
+          </a>
+          <a
+            href="#projects"
+            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+            My Projects
+          </a>
+        </div>
+      </div>
     </div>
+  </section>
   );
 }
