@@ -42,11 +42,52 @@ export const projects = [
   ];
   
   export const skills = [
-    "JavaScript",
-    "React",
-    "Node",
-    "SQL",
-    "NoSQL",
-    "Material UI",
-    "Restful API",
+    {
+      title: "JavaScript", 
+      image: "./js.png"
+    },
+    {
+      title: "HTML", 
+      image: "./html.png"
+    },
+    {
+      title: "CSS", 
+      image: "./css.png"
+    },
+    {
+      title: "React", 
+      image: "./react.png"
+    },
+    {
+      title: "Node", 
+      image: "./node-js.png"
+    },
+    {
+      title: "SQL", 
+      image: "./database.png"
+    },
+    {
+      title: "NoSQL", 
+      image: "./mongodb.png"
+    },
+    {
+      title: "Restful API", 
+      image: "./api.png"
+    },
+    {
+      title: "PWA", 
+      image: "./pwa.png"
+    },
+    {
+      title: "MVC", 
+      image: "./mvc.png"
+    },
+    {
+      title: "Github", 
+      image: "./github.png"
+    },
+    {
+      title: "Agile", 
+      image: "./agile.png"
+    },
   ];
