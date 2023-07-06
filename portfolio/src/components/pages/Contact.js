@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useFormik } from 'formik';
 import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
+require('dotenv').config();
+
+// set email sender
+export const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.SERVICE_ID)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
 
 
-
-
+// validate email
 const validate = (values) => {
   const errors = {}
 
@@ -19,7 +35,7 @@ const validate = (values) => {
 }
 
 
-export default function Contact() {
+ function Contact() {
 // validate email
   const formik = useFormik({
     initialValues: {
@@ -47,7 +63,7 @@ const onSubmit = (data) => {
   return (
     <section id="contact" className="relative">
     <div className="flex justify-center">
-      <form onSubmit={handleSubmit(onSubmit)}
+      <form ref={form} onSubmit={(e) => { handleSubmit(onSubmit)(e); sendEmail(e); }}
         name="contact"
         className="flex flex-col w-50">
         <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
@@ -64,12 +80,17 @@ const onSubmit = (data) => {
           <input
             type="text"
             id="name"
-            name="name"
+            name="name"  {...register('name', { required: true, minLength: 3 })}
             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out hover:brightness-200"
-          />
+          />  {errors.name && errors.name.type === 'required' && (
+            <div>Required</div>
+          )}
+          {errors.name && errors.name.type === 'minLength' && (
+            <div>Name must be at least 3 characters.</div>
+          )}
         </div>
         <div className="relative mb-4">
-          <label for="email"htmlFor="email" className="leading-7 text-sm text-gray-400">
+          <label htmlFor="email" className="leading-7 text-sm text-gray-400">
             Email
           </label>
           <input
@@ -87,7 +108,7 @@ const onSubmit = (data) => {
             htmlFor="message"
             className="leading-7 text-sm text-gray-400"
             name="message"
-            for="message">
+            >
             Message
           </label>
           <textarea
@@ -95,7 +116,7 @@ const onSubmit = (data) => {
             name="message"   {...register('message', { required: true, minLength: 5 })}
             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:brightness-200"
           />  {errors.message && errors.message.type === 'required' && (
-            <div>This field is required.</div>
+            <div>Required</div>
           )}
           {errors.message && errors.message.type === 'minLength' && (
             <div>Message must be at least 5 characters.</div>
@@ -111,4 +132,4 @@ const onSubmit = (data) => {
   </section>
   );
 }
-
+}
