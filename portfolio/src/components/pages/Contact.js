@@ -1,28 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import { useFormik } from 'formik';
-import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
-require('dotenv').config();
 
-// set email sender
-export const ContactUs = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.SERVICE_ID)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+// email sender 
 
 
 
-// validate email
-const validate = (values) => {
+ const validate = (values) => {
   const errors = {}
 
   if (!values.email) {
@@ -35,7 +19,41 @@ const validate = (values) => {
 }
 
 
- function Contact() {
+export default function Contact() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Get the form values
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const message = event.target.message.value;
+
+    // Create the email parameters
+    const params = {
+      from_name: name,
+      from_email: email,
+      message: message
+    };
+
+    // Send the email
+    emailjs.send('service_4bz76nx', 'template_antjpxu', params, 'm-q4iPuK6x4vj7Zo2')
+    .then((response) => {
+      console.log('Email sent successfully!', response.status, response.text);
+      setShowModal(true); 
+    })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        // Add any error handling code or display an error message
+      });
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    window.location.href = '/'
+  };
+  
 // validate email
   const formik = useFormik({
     initialValues: {
@@ -49,21 +67,12 @@ const validate = (values) => {
 
 /// validate message 
 
-const {
-  register,
-  handleSubmit,
-  formState: { errors },
-} = useForm();
 
-const onSubmit = (data) => {
-  // Handle form submission
-  console.log(data);
-};
 
   return (
     <section id="contact" className="relative">
     <div className="flex justify-center">
-      <form ref={form} onSubmit={(e) => { handleSubmit(onSubmit)(e); sendEmail(e); }}
+      <form onSubmit={handleSubmit}
         name="contact"
         className="flex flex-col w-50">
         <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
@@ -80,14 +89,11 @@ const onSubmit = (data) => {
           <input
             type="text"
             id="name"
-            name="name"  {...register('name', { required: true, minLength: 3 })}
+            name="name"
+            minLength={2}
+          maxLength={20}
             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out hover:brightness-200"
-          />  {errors.name && errors.name.type === 'required' && (
-            <div>Required</div>
-          )}
-          {errors.name && errors.name.type === 'minLength' && (
-            <div>Name must be at least 3 characters.</div>
-          )}
+          />
         </div>
         <div className="relative mb-4">
           <label htmlFor="email" className="leading-7 text-sm text-gray-400">
@@ -113,14 +119,11 @@ const onSubmit = (data) => {
           </label>
           <textarea
             id="message"
-            name="message"   {...register('message', { required: true, minLength: 5 })}
+            name="message"   
+            minLength={5}
+            maxLength={100} 
             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:brightness-200"
-          />  {errors.message && errors.message.type === 'required' && (
-            <div>Required</div>
-          )}
-          {errors.message && errors.message.type === 'minLength' && (
-            <div>Message must be at least 5 characters.</div>
-          )}
+          />
         </div>
         <button
           type="submit"
@@ -129,7 +132,16 @@ const onSubmit = (data) => {
         </button>
       </form>
     </div>
+    
+    {showModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <h3>Email Sent Successfully!</h3>
+            <button onClick={closeModal}>Close</button>
+          </div>
+        </div>
+      )}
   </section>
   );
 }
-}
+
