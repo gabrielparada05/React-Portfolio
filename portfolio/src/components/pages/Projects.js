@@ -5,7 +5,7 @@ import { projects } from "../../data.js";
 
 export default function Projects() {
   return (
-    <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+    <section id="projects" className="box-body bg-gray-600 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
@@ -26,7 +26,7 @@ export default function Projects() {
                     src={project.image}
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-5 hover:opacity-100 z-10">
-                    <div className="px-8 py-10 bg-gray-900 bg-opacity-80 text-white">
+                    <div className="px-8 py-10 bg-gray-600 bg-opacity-80 text-white">
                       <h2 className="text-green-400 tracking-widest text-sm title-font font-medium mb-1">
                         {project.subtitle}
                       </h2>
@@ -50,7 +50,7 @@ export default function Projects() {
                         <a
                           href={project.repo}
                           className="w-1/2 p-4 relative"
-                          key={project.image}
+                          key={project.title}
                         >
                           <img
                             alt="gallery"

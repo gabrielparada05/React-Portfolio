@@ -2,12 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-selected {
-    background-color: #2d3748;
-    color: #ffffff;
-    font-size: medium;
-    
-  }
+
 
 /* Primary Color */
 :root {
@@ -44,6 +39,25 @@
   
   a {
     color: var(--accent-color);
+  }
+
+  .nav-selected {
+    background-color: #2d3748;
+    color: #ffffff;
+    font-size: 18px;
+    
+  }
+
+  .header-nav {
+    background-color: #1b2931!important;
+  }
+
+ .box-body {
+    background-color:  #16123f;
+  }
+
+  .bg-gray-900 {
+    background-color: #fff!important;
   }
 
   .modal {

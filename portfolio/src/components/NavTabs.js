@@ -4,8 +4,8 @@ import React from 'react';
 
 export default function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <header className="bg-gradient-to-r from-blue-500 to-purple-500">
-    <nav className="bg-gray-900 shadow-lg sticky top-0 z-50">
+    <header className="bg-blue-800">
+    <nav className="header-nav shadow-lg sticky top-0 z-50">
       <div className="navbar">
         <ul className="flex items-center justify-start h-16">
           <li>

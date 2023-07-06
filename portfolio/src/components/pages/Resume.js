@@ -38,7 +38,7 @@ export default function Resume() {
       <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         {skills.map((skill) => (
           <div key={skill} className="p-2 sm:w-1/3 w-full">
-            <div className="bg-gray-800 rounded flex p-2 h-full items-center space-x-14 justify-center">
+            <div className="bg-gray-600 rounded flex p-2 h-full items-center space-x-14 justify-center">
               <span className="title-font font-medium text-white">
                 {skill.title} 
               </span>
