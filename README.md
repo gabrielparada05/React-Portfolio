@@ -1,3 +1,5 @@
+# React-Portfolio
+
 
 ![License: GNU General Public License v3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)
 [License: GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0)
@@ -9,7 +11,8 @@ The project is a personal portfolio website built using React. It showcases the 
 
 ## Table of Contents
 
-- [React Portfolio](#react-portfolio)
+- [React-Portfolio](#react-portfolio)
+- [React Portfolio](#react-portfolio-1)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
