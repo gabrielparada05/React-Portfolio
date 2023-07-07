@@ -47,13 +47,11 @@ export default function Contact() {
         console.error('Error sending email:', error);
         // Add any error handling code or display an error message
       });
+
+      
   };
 
-  const closeModal = () => {
-    setShowModal(false);
-    window.location.href = 'https://gabrielparada05.github.io/React-Portfolio/'
-  };
-  
+
 // validate email
   const formik = useFormik({
     initialValues: {
