@@ -21,8 +21,8 @@ export default function Resume() {
 
   return (
     <section id="skills">
-    <div className="container px-5 py-10 mx-auto">
-      <div className="text-center mb-20">
+    <div className="container px-1 py-4 ">
+      <div className="text-center mb-5">
         <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
           My Skills
         </h1>
@@ -38,7 +38,7 @@ export default function Resume() {
       <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         {skills.map((skill) => (
           <div key={skill} className="p-2 sm:w-1/3 w-full">
-            <div className="bg-gray-600 rounded flex p-2 h-full items-center space-x-14 justify-center">
+            <div className="bg-gray-800 rounded flex p-2 h-full items-center space-x-14 justify-center">
               <span className="title-font font-medium text-white">
                 {skill.title} 
               </span>
@@ -48,7 +48,7 @@ export default function Resume() {
         ))}
       </div>
     </div>
-    <div className='flex flex-row justify-center'>
+    <div className='flex flex-row justify-center m-5'>
             <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={onButtonClick}>
                     Download my Resume
           </button>

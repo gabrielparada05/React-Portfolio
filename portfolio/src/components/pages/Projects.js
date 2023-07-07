@@ -6,12 +6,12 @@ import { projects } from "../../data.js";
 export default function Projects() {
   return (
     <section id="projects" className="box-body bg-gray-600 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
+      <div className="container px-1 py-4 mx-auto text-center lg:px-40">
+        <div className="flex flex-col w-full mb-5">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             My Projects
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <p className="text-center">
             As a web developer, I have worked on a diverse range of projects that showcase my skills and passion for creating exceptional web experiences. From developing interactive web applications to designing responsive websites, I have always strived for excellence in every project I undertake.
           </p>
         </div>

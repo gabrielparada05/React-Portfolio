@@ -70,13 +70,13 @@ export default function Contact() {
 
 
   return (
-    <section id="contact" className="relative">
-    <div className="flex justify-center">
+    <section id="contact" className="relative px-1 py-4">
+    <div className="flex justify-center text-center mb-5">
       <form onSubmit={handleSubmit}
         name="contact"
         className="flex flex-col w-50">
-        <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-          Contact
+        <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font mb-3">
+          Contact Me
         </h2>
         <p className="leading-relaxed mb-5">
         On my contact page, I provide a convenient way for you to get in touch with me. Whether you have a project idea, a question, or simply want to say hello, I'm always ready to listen and collaborate. 
@@ -125,16 +125,17 @@ export default function Contact() {
             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:brightness-200"
           />
         </div>
-        <button
+        <button 
           type="submit"
-          className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          className={`text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg`}
+          disabled={!formik.dirty || !formik.isValid}>
           Submit
         </button>
       </form>
     </div>
     
     {showModal && (
-        <div className="modal">
+        <div className="modal" >
           <div className="modal-content">
             <h3>Email Sent Successfully!</h3>
             <button onClick={closeModal}>Close</button>
