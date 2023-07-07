@@ -9,24 +9,35 @@ export default function About() {
       <img src={logo} alt='logo' className='w-60'/>
         <div className="flex flex-col text-center">
           
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I am Gabriel!
-          </h1>
-         
-           
+        <Typical
+     
+      wrapper="h3"
+      steps={[
+        'Hi, I am a Junior Developer!',
+        100,
+      ]}
+    />
+    <Typical
+      wrapper="h4"
+      steps={[
+        '📍Bradford, ON',
+        100,
+      ]}
+    />
+  
             <Typical
-              loop={Infinity}
+              
               wrapper="p"
               steps={[
                 'I am a former Manager in Social Services',
-                1000,
-                'I have strong foundation in leadership, strategic planning, and problem-solving,',
-                1000,
-                'I am pursuing a new career path in Web Development,',
-                1000, 
-                'I have a solid understanding of full-stack web development,',
-                1000,
-                'I am excited about the opportunity to learn and share my knowledge with you.'
+                500, 
+                'I have a strong foundation in leadership, strategic planning, and problem-solving',
+                500, 
+                'I am pursuing a new career path in Web Development',
+                500, 
+                'I have a solid understanding of full-stack web development',
+                500, 
+                'I am excited about the opportunity to learn and share my knowledge with you'
               ]}
             />
          
