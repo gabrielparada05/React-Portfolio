@@ -35,9 +35,9 @@ export default function Resume() {
             solutions that meet user needs and exceed expectations.
           </p>
         </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 skill-box">
           {skills.map((skill) => (
-            <div key={skill.id} className="p-2 sm:w-1/3 w-full">
+            <div key={skill.id} className="p-2 sm:w-1/3 w-full skill-box2">
               <div className="bg-gray-800 rounded flex p-2 h-full items-center space-x-14 justify-center">
                 <span className="title-font font-medium text-white" key={skill.id}>
                   {skill.title}

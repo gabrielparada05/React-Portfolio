@@ -123,12 +123,32 @@
     margin-top: 70px!important;
   }
 
-  #contact {
-    margin-top: 70px!important;
-  }
+
   
   button[disabled] {
     opacity: 0.5; 
     cursor: not-allowed; 
     background-color: gray;
+  }
+
+ 
+  /* On screens that are 640px or less, set the background color to blue */
+  @media screen and (max-width: 640px) {
+    .skill-box {
+      width: fit-content;
+  }
+
+  .skill-box2 {
+    display: flex;
+    justify-content: center;
+  ;
+}
+
+p {
+  margin-left: 10px; 
+  margin-right: 10px;
+  text-align: justify!important;
+}
+
+
   }

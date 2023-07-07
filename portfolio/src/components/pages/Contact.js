@@ -80,17 +80,20 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative px-1 py-4">
-    <div className="flex justify-center text-center mb-5">
-      <form onSubmit={handleSubmit}
-        name="contact"
-        className="flex flex-col w-50">
-        <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font mb-3">
+    <div className=" container flex justify-center flex-col text-center items-center mb-5">
+    <div className="text-center mb-5">
+    <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font mb-3">
           Contact Me
         </h2>
-        <p className="text-center">
+        <p className="text-white w--7/12 mb-3 ">
         On my contact page, I provide a convenient way for you to get in touch with me. Whether you have a project idea, a question, or simply want to say hello, I'm always ready to listen and collaborate. 
         Feel free to fill out the contact form with your name, email address, and message, and I'll make sure to respond promptly.
         </p>
+</div>
+      <form onSubmit={handleSubmit}
+        name="contact"
+        className="flex flex-col w-50">
+       
         <div className="relative mb-4">
           <label htmlFor="name" className="leading-7 text-sm text-gray-400">
             Name

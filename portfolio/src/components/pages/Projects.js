@@ -11,7 +11,7 @@ export default function Projects() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             My Projects
           </h1>
-          <p className="text-center">
+          <p className="text-justify">
             As a web developer, I have worked on a diverse range of projects that showcase my skills and passion for creating exceptional web experiences. From developing interactive web applications to designing responsive websites, I have always strived for excellence in every project I undertake.
           </p>
         </div>
