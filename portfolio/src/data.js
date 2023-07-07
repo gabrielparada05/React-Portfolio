@@ -78,51 +78,63 @@ export const projects = [
   
   export const skills = [
     {
-      title: "JavaScript", 
+      id: 1,
+      title: "JavaScript",
       image: "./js.png"
     },
     {
-      title: "HTML", 
+      id: 2,
+      title: "HTML",
       image: "./html.png"
     },
     {
-      title: "CSS", 
+      id: 3,
+      title: "CSS",
       image: "./css.png"
     },
     {
-      title: "React", 
+      id: 4,
+      title: "React",
       image: "./react.png"
     },
     {
-      title: "Node", 
+      id: 5,
+      title: "Node",
       image: "./node-js.png"
     },
     {
-      title: "SQL", 
+      id: 6,
+      title: "SQL",
       image: "./database.png"
     },
     {
-      title: "NoSQL", 
+      id: 7,
+      title: "NoSQL",
       image: "./mongodb.png"
     },
     {
-      title: "Restful API", 
+      id: 8,
+      title: "Restful API",
       image: "./api.png"
     },
     {
-      title: "PWA", 
+      id: 9,
+      title: "PWA",
       image: "./pwa.png"
     },
     {
-      title: "MVC", 
+      id: 10,
+      title: "MVC",
       image: "./mvc.png"
     },
     {
-      title: "Github", 
+      id: 11,
+      title: "Github",
       image: "./github.png"
     },
     {
-      title: "Agile", 
+      id: 12,
+      title: "Agile",
       image: "./agile.png"
     },
   ];

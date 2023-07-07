@@ -6,17 +6,17 @@ export default function About() {
   return (
     <section id="about">
       <div className="container flex  items-center h-screen flex-col px-1 py-4">
-      <img src={logo} className='w-60'/>
+      <img src={logo} alt='logo' className='w-60'/>
         <div className="flex flex-col text-center">
           
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I am Gabriel!
           </h1>
-          <p className="text-justify">
+         
            
             <Typical
               loop={Infinity}
-              wrapper="P"
+              wrapper="p"
               steps={[
                 'I am a former Manager in Social Services',
                 1000,
@@ -29,7 +29,7 @@ export default function About() {
                 'I am excited about the opportunity to learn and share my knowledge with you.'
               ]}
             />
-          </p>
+         
         </div>
       </div>
     </section>
