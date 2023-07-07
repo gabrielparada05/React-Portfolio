@@ -78,7 +78,7 @@ export default function Contact() {
         <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font mb-3">
           Contact Me
         </h2>
-        <p className="leading-relaxed mb-5">
+        <p className="text-center">
         On my contact page, I provide a convenient way for you to get in touch with me. Whether you have a project idea, a question, or simply want to say hello, I'm always ready to listen and collaborate. 
         Feel free to fill out the contact form with your name, email address, and message, and I'll make sure to respond promptly.
         </p>

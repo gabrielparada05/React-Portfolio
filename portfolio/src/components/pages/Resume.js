@@ -26,7 +26,7 @@ export default function Resume() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
             My Skills
           </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+          <p className="text-justify">
             As a web developer, I have a diverse set of skills that enable me to
             create engaging and functional web applications. I am experienced in
             front-end, and also have knowledge of back-end development
