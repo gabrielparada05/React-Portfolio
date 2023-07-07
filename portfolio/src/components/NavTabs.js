@@ -5,7 +5,7 @@ import React from 'react';
 export default function NavTabs({ currentPage, handlePageChange }) {
   return (
     <header className="bg-blue-800">
-    <nav className="header-nav shadow-lg fixed justify-center py-1 px-1 fixed top-0 w-full">
+    <nav className="header-nav shadow-lg fixed justify-center py-1 px-1 z-20 fixed top-0 w-full">
       <div className="navbar">
         <ul className="flex items-center justify-start h-16">
           <li>
