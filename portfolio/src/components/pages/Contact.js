@@ -51,7 +51,7 @@ export default function Contact() {
 
   const closeModal = () => {
     setShowModal(false);
-    window.location.href = 'https://gabrielparada05.github.io/React-Portfolio/#About'
+    window.location.href = 'https://gabrielparada05.github.io/React-Portfolio/'
   };
   
 // validate email
