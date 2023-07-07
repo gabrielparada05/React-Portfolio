@@ -3,22 +3,23 @@ import Github from '../images/github.png';
 import Linkedin from '../images/linkedin.png'
 
 export default function FooterRender() {
-  
-    return (
-    <footer className="bg-gray-900 text-gray-400 py-4 text-center">
-      <div className="container mx-auto">
-        <div className="flex justify-center mb-2">
-          <a href="https://github.com/gabrielparada05" className="text-blue-500 underline hover:text-blue-700">
-          <img src={Github} alt="Logo Github" className="w-10 h-10 mr-4" /> 
-          </a>
-          <a href="https://www.linkedin.com/in/gabriel-parada-moreno-78b8083b/" className="text-blue-500 underline hover:text-blue-700">
-          <img src={Linkedin} alt="Logo Linkedin" className="w-10 h-15 mr-4" /> 
-          </a>
-        </div>
+
+  return (
+    <footer className="footer text-gray-400 py-4 text-center flex justify-center flex-col ">
+      <div className="flex justify-center mb-2">
+        <a href="https://github.com/gabrielparada05" className="text-blue-500 underline hover:text-blue-700">
+          <img src={Github} alt="Logo Github" className="w-8 h-8 mr-4" />
+        </a>
+        <a href="https://www.linkedin.com/in/gabriel-parada-moreno-78b8083b/" className="text-blue-500 underline hover:text-blue-700">
+          <img src={Linkedin} alt="Logo Linkedin" className="w-8 h-15 mr-4" />
+        </a>
+      </div>
+
+      <div>
         <p>&copy; By Gabriel Parada</p>
       </div>
+      
     </footer>
   );
 };
 
-  

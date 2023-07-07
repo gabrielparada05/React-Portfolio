@@ -28,11 +28,11 @@ export default function NavTabs({ currentPage, handlePageChange }) {
               Projects
             </a>
           </li>
-          <li>
+          <li className='navHover'>
             <a
               href="#Resume"
               onClick={() => handlePageChange('Resume')}
-              className={`ml-6 no-underline text-gray-300 hover:text-white ${
+              className={`ml-6 no-underline text-gray-300 ${
                 currentPage === 'Resume' ? 'nav-selected' : 'nav-link'
               }`}
             >

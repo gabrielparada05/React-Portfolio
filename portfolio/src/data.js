@@ -1,7 +1,7 @@
 export const projects = [
     {
       title: "Payment Tracker",
-      subtitle: "MVC",
+      subtitle: "MVC/Pair Programming/JS/CSS/MySQL ",
       description:
         "This bill payment tracker app allows users to enter and view information about bills and payments for them, and to schedule reminders for bills that are due soon.",
       image: "./bill.jpg",
@@ -14,7 +14,7 @@ export const projects = [
       title: "Code Quiz",
       subtitle: "JavaScript/CSS",
       description:
-        "This is a simple quiz app built with HTML, CSS, and JavaScript. The app allows users to take a quiz and get a score based on their answers. The app has multiple-choice questions and the user has a limited amount of time to complete the quiz.",
+        "This is a simple quiz app built with HTML, CSS, and JavaScript. The app allows users to take a quiz and get a score based on their answers.",
       image: "./quiz.jpg",
       link: "https://gabrielparada05.github.io/Code-Quiz-C4/",
       repo:"https://github.com/gabrielparada05/Code-Quiz-C4",
@@ -34,9 +34,9 @@ export const projects = [
     },
     {
       title: "Weather Dashboard",
-      subtitle: "Full Stack",
+      subtitle: "Rest API/CSS/JS/HTML",
       description:
-        "This is a weather app that allows users to search for a city and get the current weather and a 5-day forecast for that city. The app uses the OpenWeatherMap API to fetch weather data.",
+        "This is a weather app that allows users to search for a city and get the current weather and a 5-day forecast for that city. The app uses the OpenWeatherMap API",
       image: "./weather.jpg",
       link: "https://gabrielparada05.github.io/forecast-C6/",
       repo:"https://github.com/gabrielparada05/forecast-C6",
@@ -45,9 +45,9 @@ export const projects = [
     },
     {
       title: "Learning Words",
-      subtitle: "Full Stack",
+      subtitle: "Rest API/HTML/CSS/JQuery/Pair Programming",
       description:
-        "Learning Words is an interactive web application that lets the user search for words, and it returns some information about words, such as type (noun, verb, etc), definition, and synonyms. ",
+        "An interactive web app that lets the user search for words, and it returns words, such as type (noun, verb, etc), definition, and synonyms.",
       image: "./word.jpg",
       link: "https://zaingova.github.io/group-project-learning-words/",
       repo: "https://github.com/zaingova/group-project-learning-words",
@@ -56,9 +56,9 @@ export const projects = [
     },
     {
       title: "API Social Network",
-      subtitle: "CRUD NoSQL",
+      subtitle: "CRUD/MongoDB/Node",
       description:
-        "This is a back-end project built with Mongoose, which serves as the main component of a social media application. The project includes a Node.js server that uses Express.js to handle HTTP requests and responses, and Mongoose to interact with a MongoDB database. ",
+        "This is a back-end project built with Mongoose, which serves as the main component of a social media application. ",
       image: "./crud.png",
       repo: "https://github.com/gabrielparada05/Social-Network-API-NoSQL-C18",
       logoGit: "./github.png",
@@ -66,10 +66,10 @@ export const projects = [
     },
     {
       title: "CLI Employee Tracker",
-      subtitle: "CRUD MySQL",
+      subtitle: "CRUD/MySQL/Express/Node",
       description:
-        "This app interacts with a MySQL database to manage employee data. It uses the Inquirer package to prompt the user with a list of actions they can take, in order to cover CRUD operations. ",
-      image: "./crud1.jpg",
+        "This app interacts with a MySQL database to manage employee data. ",
+      image: "./crud1.png",
       repo: "https://github.com/gabrielparada05/Employee-Tracker-SQL-C12",
       logoGit: "./github.png",
       logoWww: "./www.png",

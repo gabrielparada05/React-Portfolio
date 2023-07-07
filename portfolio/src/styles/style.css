@@ -42,19 +42,31 @@
   }
 
   .nav-selected {
-    background-color: #2d3748;
+   
     color: #ffffff;
-    font-size: 18px;
-    
+    font-size: 20px; 
+    text-decoration-line: overline; 
+    /* font-weight: bolder;  */
   }
 
-  .header-nav {
+  .nav-hover:hover {
+    color:white;
+  }
+
+  .header-nav, .footer {
     background-color: #1b2931!important;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center
   }
 
- .box-body {
+  /* .footer{
+    height: 80px;
+  } */
+ /* .box-body {
     background-color:  #16123f;
-  }
+  } */
 
   .bg-gray-900 {
     background-color: #fff!important;
