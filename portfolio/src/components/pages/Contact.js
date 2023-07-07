@@ -25,6 +25,15 @@ export default function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    if (!formik.isValid) {
+      formik.setTouched({
+        name: true,
+        email: true,
+        message: true
+      });
+      return;
+    }
+
     // Get the form values
     const name = event.target.name.value;
     const email = event.target.email.value;
@@ -128,7 +137,8 @@ export default function Contact() {
         <button 
           type="submit"
           className={`text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg`}
-          disabled={!formik.dirty || !formik.isValid}>
+          disabled={!formik.dirty || !formik.isValid}
+          >
           Submit
         </button>
       </form>

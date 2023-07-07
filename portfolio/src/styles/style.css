@@ -127,3 +127,8 @@
     margin-top: 70px!important;
   }
   
+  button[disabled] {
+    opacity: 0.5; 
+    cursor: not-allowed; 
+    background-color: gray;
+  }
