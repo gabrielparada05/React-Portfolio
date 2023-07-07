@@ -74,8 +74,6 @@ export default function Contact() {
     },
   })
 
-/// validate message 
-
 
 
   return (
@@ -141,6 +139,7 @@ export default function Contact() {
           type="submit"
           className={`text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg`}
           disabled={!formik.dirty || !formik.isValid}
+          title="Please fill out all the fields"
           >
           Submit
         </button>
