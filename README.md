@@ -161,7 +161,7 @@ Users can collaborate with this project at https://github.com/gabrielparada05/Re
 
 
 ## Credits
-The credits for this project go to Gabriel Parada. 
+The credits for this project go to Gabriel Parada. Thanks to Free Code Camp bringing information about projects React.  
 
 The project also utilizes the following technologies and libraries:
 React: A JavaScript library for building user interfaces.
@@ -169,5 +169,5 @@ React Router: A library for routing in React applications.
 Formik: A library for building forms in React.
 EmailJS: A service for sending emails directly from JavaScript.
 Tailwind CSS: A utility-first CSS framework for building responsive and customizable UI components.
-The project also uses various images and icons, which are credited to their respective authors and sources.
+
 
