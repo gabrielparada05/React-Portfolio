@@ -74,6 +74,17 @@ export const projects = [
       logoGit: "./github.png",
       logoWww: "./www.png",
     },
+    {
+      title: "Give Hope",
+      subtitle: "GraphQL, React, Apollo Service, Tailwind CSS, Pair Programming",
+      description:
+        "A purpose driven web application designed to improve sponsor-style fundraising, GiveHope focuses on fundraising based on someone's weekly needs. ",
+      image: "./give.png",
+      repo: "https://github.com/dylansth/give-hope",
+      link: "https://powerful-oasis-64063-6b2a0502a18f.herokuapp.com/",
+      logoGit: "./github.png",
+      logoWww: "./www.png",
+    },
   ];
   
   export const skills = [
@@ -136,5 +147,10 @@ export const projects = [
       id: 12,
       title: "Agile",
       image: "./agile.png"
+    },
+    {
+      id: 13,
+      title: "GraphQL",
+      image: "./graph.png"
     },
   ];

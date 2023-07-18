@@ -51,7 +51,7 @@ export default function Contact() {
     // Send the email
     emailjs.send('service_4bz76nx', 'template_antjpxu', params, 'm-q4iPuK6x4vj7Zo2')
       .then((response) => {
-        console.log('Email sent successfully!', response.status, response.text);
+        console.log('Email sent successfully!', response.status, response.text, params);
         setShowModal(true);
       })
       .catch((error) => {
