@@ -81,7 +81,7 @@ export const projects = [
         "A purpose driven web application designed to improve sponsor-style fundraising, GiveHope focuses on fundraising based on someone's weekly needs. ",
       image: "./give.jpg",
       repo: "https://github.com/dylansth/give-hope",
-      link: "https://powerful-oasis-64063-6b2a0502a18f.herokuapp.com/",
+      link: "https://givehopedonating-c48150689fc8.herokuapp.com/",
       logoGit: "./github.png",
       logoWww: "./www.png",
     },

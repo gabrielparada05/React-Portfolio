@@ -88,7 +88,7 @@ export default function Contact() {
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font mb-3">
             Contact Me
           </h2>
-          <p className="text-white w--7/12 mb-3 text-justify ">
+          <p className="text-white w--7/12 mb-3 text-justify text-xl ">
             On my contact page, I provide a convenient way for you to get in touch with me. Whether you have a project idea, a question, or simply want to say hello, I'm always ready to listen and collaborate.
             Feel free to fill out the contact form with your name, email address, and message, and I'll make sure to respond promptly.
           </p>
@@ -98,7 +98,7 @@ export default function Contact() {
           className="flex flex-col w-50">
 
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="name" className="leading-7 text-lg text-gray-400">
               Name
             </label>
             <input
@@ -111,7 +111,7 @@ export default function Contact() {
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="email" className="leading-7 text-lg text-gray-400">
               Email
             </label>
             <input
@@ -127,7 +127,7 @@ export default function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-400"
+              className="leading-7 text-lg text-gray-400"
               name="message"
             >
               Message

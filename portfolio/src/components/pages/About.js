@@ -13,7 +13,7 @@ export default function About() {
      
       wrapper="h3"
       steps={[
-        'Hi, I am a Junior Developer!',
+        'Versatile Web Developer & Full Stack',
         100,
       ]}
     />
@@ -31,13 +31,9 @@ export default function About() {
               steps={[
                 'I am a former Manager in Social Services',
                 500, 
+                'pursuing a new career path in Web Development',
+                500, 
                 'I have a strong foundation in leadership, strategic planning, and problem-solving',
-                500, 
-                'I am pursuing a new career path in Web Development',
-                500, 
-                'I have a solid understanding of full-stack web development',
-                500, 
-                'I am excited about the opportunity to learn and share my knowledge with you'
               ]}
             />
          

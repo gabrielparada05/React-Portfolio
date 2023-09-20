@@ -35,6 +35,7 @@
   
   p {
     color: var(--secondary-color);
+    font-size: 15px;
   }
   
   a {
