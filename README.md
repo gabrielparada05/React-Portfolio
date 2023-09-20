@@ -30,8 +30,6 @@ To get started with this app, users can follow these steps:
 Clone the repository:
 -Open the terminal or command prompt.
 -Navigate to the directory where you want to clone the repository.
--Run the following command:
-git clone https://github.com/gabrielparada05/Social-Network-API-NoSQL-C18.git
 
 Install dependencies:
 -Navigate to the cloned repository's directory.
