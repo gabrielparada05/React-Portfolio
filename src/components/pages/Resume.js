@@ -6,18 +6,19 @@ export default function Resume() {
 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('resume.pdf').then(response => {
+    fetch('/resume.pdf').then(response => {
       response.blob().then(blob => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'resume.pdf';
+        alink.download = 'Gabriel_Parada.pdf';
         alink.click();
       })
     })
   }
+ 
 
   return (
     <section id="skills">
@@ -42,17 +43,17 @@ export default function Resume() {
                 <span className="title-font font-medium text-white" key={skill.id}>
                   {skill.title}
                 </span>
-                <img src={skill.image} key={`${skill.id}-image`} alt='logo' className='w-10 flex' />
+                <img src={process.env.PUBLIC_URL + skill.image} key={`${skill.id}-image`} alt='logo' className='w-10 flex' />
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className='flex flex-row justify-center m-5'>
+      {/* <div className='flex flex-row justify-center m-5'>
         <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={onButtonClick}>
           Download my Resume
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }

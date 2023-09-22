@@ -23,7 +23,7 @@ export default function Projects() {
                   <img
                     alt="gallery"
                     className="w-100 h-100 object-cover object-center"
-                    src={project.image}
+                    src={process.env.PUBLIC_URL + project.image}
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-5 hover:opacity-100 z-10">
                     <div className="px-8 py-10 bg-gray-600 bg-opacity-80 text-white ">
@@ -37,7 +37,7 @@ export default function Projects() {
                       <div className='flex flex-row justify-center flex-wrap' >
                       <div className='flex flex-row justify-center'>
                         <a
-                          href={project.link ? project.link : '#'}
+                          href={project.link ? process.env.PUBLIC_URL + project.link : '#'}
                           key={project.image}
                           className={`sm:w-1/2 w-full p-4 relative ${!project.link && 'hidden'}`}
                         
@@ -45,7 +45,7 @@ export default function Projects() {
                           <img
                             alt="gallery"
                             className="object-center w-7"
-                            src={project.logoWww}
+                            src={process.env.PUBLIC_URL + project.logoWww}
                           />
                         </a>
                         <a
@@ -56,7 +56,7 @@ export default function Projects() {
                           <img
                             alt="gallery"
                             className=" object-center w-7"
-                            src={project.logoGit}
+                            src={process.env.PUBLIC_URL + project.logoGit}
                           />
                         </a>
                       </div>
