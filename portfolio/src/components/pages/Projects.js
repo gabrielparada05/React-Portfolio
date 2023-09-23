@@ -37,7 +37,7 @@ export default function Projects() {
                       <div className='flex flex-row justify-center flex-wrap' >
                       <div className='flex flex-row justify-center'>
                         <a
-                          href={project.link ? project.link : '#'}
+                          href={project.link ? process.env.PUBLIC_URL + project.link : '#'}
                           key={project.image}
                           className={`sm:w-1/2 w-full p-4 relative ${!project.link && 'hidden'}`}
                         

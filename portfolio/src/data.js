@@ -69,7 +69,7 @@ export const projects = [
       subtitle: "CRUD/MySQL/Express/Node",
       description:
         "This app interacts with a MySQL database to manage employee data. ",
-      image: "./crud1.png",
+      image: "/crud1.png",
       repo: "https://github.com/gabrielparada05/Employee-Tracker-SQL-C12",
       logoGit: "/github.png",
       logoWww: "/www.png",
