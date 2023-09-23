@@ -42,7 +42,7 @@ export default function Resume() {
                 <span className="title-font font-medium text-white" key={skill.id}>
                   {skill.title}
                 </span>
-                <img src={skill.image} key={`${skill.id}-image`} alt='logo' className='w-10 flex' />
+                <img src={process.env.PUBLIC_URL + skill.image} key={`${skill.id}-image`} alt='logo' className='w-10 flex' />
               </div>
             </div>
           ))}
