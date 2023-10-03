@@ -22,7 +22,7 @@ const App = () => {
         </button>
       </div>
       <Routes>
-        <Route path="/" element={<PortfolioContainer />} />
+        <Route path="/React-Portfolio" element={<PortfolioContainer />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
