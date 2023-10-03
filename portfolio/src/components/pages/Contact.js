@@ -85,12 +85,11 @@ export default function Contact() {
     <section id="contact" className="relative px-1 py-4">
       <div className=" container flex justify-center flex-col text-center items-center mb-5">
         <div className="text-center mb-5">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font mb-3">
-            Contact Me
-          </h2>
-          <p className="text-white w--7/12 mb-3 text-justify text-xl ">
-            On my contact page, I provide a convenient way for you to get in touch with me. Whether you have a project idea, a question, or simply want to say hello, I'm always ready to listen and collaborate.
-            Feel free to fill out the contact form with your name, email address, and message, and I'll make sure to respond promptly.
+        <h1 className="shadow1 text-4xl sm:text-5xl font-bold mb-4 text-blue-500 p-2">
+            Contact Me 📧
+          </h1>
+          <p className="text-justify text-xl leading-8">
+          📞 On my contact page, you can easily reach out to me. Whether you have a project, a question, or just want to say hi, I'm here to chat. Feel free to use the contact form with your name, email, and message, and I'll get back to you soon! 👋📧
           </p>
         </div>
         <form onSubmit={handleSubmit}
@@ -98,7 +97,7 @@ export default function Contact() {
           className="flex flex-col w-50">
 
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-lg text-gray-400">
+            <label htmlFor="name" className="leading-7 text-lg text-gray-800">
               Name
             </label>
             <input
@@ -107,18 +106,18 @@ export default function Contact() {
               name="name"
               minLength={2}
               maxLength={20}
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out hover:brightness-200" required
+              className="w-full bg-sky-300 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-slate-600 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out hover:brightness-50" required
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-lg text-gray-400">
+            <label htmlFor="email" className="leading-7 text-lg text-gray-800">
               Email
             </label>
             <input
               type="email"
               id="email"
               name="email"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out hover:brightness-200"
+              className="w-full bg-sky-300 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-slate-600 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out hover:brightness-50"
               onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} />
             {formik.touched.email && formik.errors.email && (
               <span>{formik.errors.email}</span>
@@ -127,7 +126,7 @@ export default function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-lg text-gray-400"
+              className="leading-7 text-lg text-gray-800"
               name="message"
             >
               Message
@@ -137,7 +136,7 @@ export default function Contact() {
               name="message"
               minLength={5}
               maxLength={100}
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:brightness-200" required
+              className="w-full bg-sky-300 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-slate-600 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:brightness-50" required
             />
           </div>
           {(!formik.dirty || !formik.isValid) && (
@@ -145,7 +144,7 @@ export default function Contact() {
           )}
           <button
             type="submit"
-            className={`text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg`}
+            className={`text-white bg-sky-300 border-0 py-2 px-6 focus:outline-none hover:bg-sky-600 rounded text-lg`}
             disabled={!formik.dirty || !formik.isValid}
             title="Please fill out all the fields"
           >

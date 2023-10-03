@@ -5,15 +5,17 @@ import { projects } from "../../data.js";
 
 export default function Projects() {
   return (
-    <section id="projects" className="box-body bg-gray-600 body-font">
+    <section id="projects" className="box-body body-font">
       <div className="container px-1 py-4 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-5">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            My Projects
+          <h1 className="shadow1 text-4xl sm:text-5xl font-bold mb-4 text-blue-500 p-2">
+            My Projects🌐
           </h1>
-          <p className="text-justify text-xl">
-            As a web developer, I have worked on a diverse range of projects that showcase my skills and passion for creating exceptional web experiences. From developing interactive web applications to designing responsive websites, I have always strived for excellence in every project I undertake.
-          </p>
+          <p className="text-justify text-xl leading-8">
+          👩‍💻 As a web developer, I have worked on a diverse range of projects that showcase my 
+          skills and passion for creating exceptional web experiences. From developing interactive 
+          web applications to designing responsive websites, I have always strived for 
+          excellence in every project I undertake. 💪🌟 </p>
         </div>
         <div className="flex flex-col">
           <div className="flex flex-wrap -m-4">
@@ -26,17 +28,17 @@ export default function Projects() {
                     src={process.env.PUBLIC_URL + project.image}
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-5 hover:opacity-100 z-10">
-                    <div className="px-8 py-10 bg-gray-600 bg-opacity-80 text-white ">
-                      <h2 className="text-green-400 tracking-widest text-sm title-font font-medium mb-1">
+                    <div className="px-8 py-10 bg-sky-300 bg-opacity-90 text-white w-100 h-100 ">
+                      <h2 className="text-white tracking-widest text-sm title-font font-medium mb-1">
                         {project.subtitle}
                       </h2>
-                      <h1 className="text-white title-font text-lg font-medium mb-3">
+                      <h1 className="text-slate-700 title-font text-lg font-medium mb-3">
                         {project.title}
                       </h1>
-                      <p className="text-white object-cover leading-relaxed">{project.description}</p>
+                      <p className="text-slate-700 object-cover leading-relaxed">{project.description}</p>
                       <div className='flex flex-row justify-center flex-wrap' >
-                      <div className='flex flex-row justify-center'>
-                        <a
+                        <div className='flex flex-row justify-center'>
+                          {/* <a
                           href={project.link ? process.env.PUBLIC_URL + project.link : '#'}
                           key={project.image}
                           className={`sm:w-1/2 w-full p-4 relative ${!project.link && 'hidden'}`}
@@ -58,8 +60,32 @@ export default function Projects() {
                             className=" object-center w-7"
                             src={process.env.PUBLIC_URL + project.logoGit}
                           />
-                        </a>
-                      </div>
+                        </a> */}
+
+                          <a
+                            href={project.link ? process.env.PUBLIC_URL + project.link : '#'}
+                            key={project.image}
+                            className={`sm:w-1/2 w-full p-4 relative ${!project.link && 'hidden'}`}
+                          >
+                            <button
+                            className="text-blue-500 hover:text-gray-800 transition duration-300 ease-in-out bg-blue-300 hover:bg-white text-slate-900 hover:text-blue-500 border border-blue-500 rounded px-4 py-2"
+    >
+                              Live
+                            </button>
+                          </a>
+                          <a
+                            href={project.repo}
+                            className="p-4"
+                            key={project.title}
+                          >
+                            <button
+                            className="text-blue-500 hover:text-gray-800 transition duration-300 ease-in-out bg-blue-300 hover:bg-white text-slate-900 hover:text-blue-500 border border-blue-500 rounded px-4 py-2"
+                            >
+                              Github
+                            </button>
+                          </a>
+
+                        </div>
                       </div>
                     </div>
                   </div>
