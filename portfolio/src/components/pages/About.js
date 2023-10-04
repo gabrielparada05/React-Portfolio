@@ -1,7 +1,7 @@
 import React from 'react';
 // import Typical from 'react-typical';
 // import logo from '../../images/logo-png.png';
-import gabriel from '../../images/gabriel.jpg';
+import gabriel from '../../images/gabriel1.png';
 
 
 export default function About() {
