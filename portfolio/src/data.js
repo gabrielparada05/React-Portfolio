@@ -1,23 +1,35 @@
 export const projects = [
+
+  {
+    title: "Give Hope",
+    subtitle: "GraphQL, React, Apollo Service, Tailwind CSS, Pair Programming",
+    description:
+      "A purpose driven web application designed to improve sponsor-style fundraising, GiveHope focuses on fundraising based on someone's weekly needs. ",
+    image: "/give.jpg",
+    repo: "https://github.com/dylansth/give-hope",
+    link: "https://givehopedonating-c48150689fc8.herokuapp.com/",
+    logoGit: "/github.png",
+    logoWww: "/www.png",
+  },
+  {
+    title: "Code Quiz",
+    subtitle: "JavaScript/CSS",
+    description:
+      "This is a simple quiz app built with HTML, CSS, and JavaScript. The app allows users to take a quiz and get a score based on their answers.",
+    image: "/quiz.jpg",
+    link: "https://gabrielparada05.github.io/Code-Quiz-C4/",
+    repo:"https://github.com/gabrielparada05/Code-Quiz-C4",
+    logoGit: "/github.png",
+    logoWww: "/www.png",
+  },
     {
       title: "Payment Tracker",
       subtitle: "MVC/Pair Programming/JS/CSS/MySQL ",
       description:
         "This bill payment tracker app allows users to enter and view information about bills and payments for them, and to schedule reminders for bills that are due soon.",
       image: "/bill.jpg",
-      link: "https://s2robertson-payment-tracker-2c1497a835bb.herokuapp.com/",
-      repo: "https://github.com/s2robertson/bill-payment-tracker",
-      logoGit: "/github.png",
-      logoWww: "/www.png",
-    },
-    {
-      title: "Code Quiz",
-      subtitle: "JavaScript/CSS",
-      description:
-        "This is a simple quiz app built with HTML, CSS, and JavaScript. The app allows users to take a quiz and get a score based on their answers.",
-      image: "/quiz.jpg",
-      link: "https://gabrielparada05.github.io/Code-Quiz-C4/",
-      repo:"https://github.com/gabrielparada05/Code-Quiz-C4",
+      link: "https://murmuring-forest-53781-110f308e8c28.herokuapp.com/",
+      repo: "https://github.com/gabrielparada05/bill-payment-tracker",
       logoGit: "/github.png",
       logoWww: "/www.png",
     },
@@ -71,17 +83,6 @@ export const projects = [
         "This app interacts with a MySQL database to manage employee data. ",
       image: "/crud1.png",
       repo: "https://github.com/gabrielparada05/Employee-Tracker-SQL-C12",
-      logoGit: "/github.png",
-      logoWww: "/www.png",
-    },
-    {
-      title: "Give Hope",
-      subtitle: "GraphQL, React, Apollo Service, Tailwind CSS, Pair Programming",
-      description:
-        "A purpose driven web application designed to improve sponsor-style fundraising, GiveHope focuses on fundraising based on someone's weekly needs. ",
-      image: "/give.jpg",
-      repo: "https://github.com/dylansth/give-hope",
-      link: "https://givehopedonating-c48150689fc8.herokuapp.com/",
       logoGit: "/github.png",
       logoWww: "/www.png",
     },
