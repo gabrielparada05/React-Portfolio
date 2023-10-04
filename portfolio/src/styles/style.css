@@ -73,16 +73,13 @@
   }
 
   .header-nav, .footer {
- 
-   
     display: flex;
     flex-wrap: wrap;
-    align-content: center
+    align-content: center;
+ 
   }
 
-  /* .footer{
-    height: 80px;
-  } */
+  
  /* .box-body {
     background-color:  #16123f;
   } */
@@ -164,8 +161,14 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px!important;
+    padding: 10px;
    }
+
+   
+ .form1 {
+  width: 90%;
+  text-align:left;
+}
   
     }
  
