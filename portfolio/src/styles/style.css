@@ -74,7 +74,7 @@
 
   .header-nav, .footer {
  
-    height: 40px;
+   
     display: flex;
     flex-wrap: wrap;
     align-content: center
@@ -148,18 +148,28 @@
     background-color: gray;
   }
 
+  @media screen and (max-width: 768px) {
+
+   .project {
+    position: relative;
+    opacity: 1;
+   }
+
+   .project_title {
+    padding: 10px
+   }
+
+  .foot {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+   }
+  
+    }
  
   /* On screens that are 640px or less */
   @media screen and (max-width: 640px) {
-
-  /* nav {
-    margin-right: 10px;
-  }  */
-
-  ul{
-    padding: 0px;
-    margin-right: 13px;
-  }
 
   p {
     margin-left: 10px; 
@@ -185,7 +195,6 @@
 .about {
   padding-left: 0;
 }
-
 
 
   }

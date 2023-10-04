@@ -28,8 +28,8 @@ export default function Projects() {
                     className="w-100 h-100 object-cover object-center"
                     src={process.env.PUBLIC_URL + project.image}
                   />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-5 hover:opacity-100 z-10">
-                    <div className="px-8 py-10 bg-sky-300 bg-opacity-90 text-white w-100 h-100 ">
+                  <div className="project absolute inset-0 flex items-center justify-center opacity-5 hover:opacity-100 z-10">
+                    <div className="project_title px-8 py-10 bg-sky-300 bg-opacity-90 text-white w-100 h-100 ">
                       <h2 className="text-white tracking-widest text-sm title-font font-medium mb-1">
                         {project.subtitle}
                       </h2>
@@ -66,7 +66,7 @@ export default function Projects() {
                           <a
                             href={project.link ? process.env.PUBLIC_URL + project.link : '#'}
                             key={project.image}
-                            className={`sm:w-1/2 w-full p-4 relative ${!project.link && 'hidden'}`}
+                            className={`sm:w-1/2 w-full p-2 md:p-0 relative ${!project.link && 'hidden'}`}
                           >
                             <button
                             className="text-blue-500 hover:text-gray-800 transition duration-300 ease-in-out bg-blue-300 hover:bg-white text-slate-900 hover:text-blue-500 border border-blue-500 rounded px-4 py-2"
@@ -76,7 +76,7 @@ export default function Projects() {
                           </a>
                           <a
                             href={project.repo}
-                            className="p-4"
+                            className="p-2"
                             key={project.title}
                           >
                             <button

@@ -30,7 +30,7 @@ export default function About() {
 
           
 
-          <p className="pl-3 text-justify text-xl leading-8 about">
+          <p className="pl-5 text-justify text-xl leading-8 about">
           
           I'm a <span className="text-blue-500">dedicated professional</span> with a background in Social Services and a 
           Full Stack Bootcamp graduate from the University of Toronto. Passionate about creating
