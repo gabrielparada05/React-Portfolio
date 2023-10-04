@@ -19,7 +19,7 @@ const App = () => {
     <Router>
       <div>
         <button onClick={scrollToTop} className="scroll-to-top-button">
-          Scroll to Top
+        {/* Scroll to Top */}
         </button>
       </div>
       <Routes>

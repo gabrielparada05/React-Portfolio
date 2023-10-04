@@ -148,7 +148,7 @@
     background-color: gray;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 991px) {
 
    .project {
     position: relative;
@@ -164,6 +164,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    max-width: 1000px!important;
    }
   
     }
