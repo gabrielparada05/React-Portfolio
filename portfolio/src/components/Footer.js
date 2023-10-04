@@ -15,7 +15,7 @@ export default function FooterRender() {
         </a>
       </div>
 
-      <div>
+      <div className='flex sm:justify-center'>
         <p>&copy; By Gabriel Parada</p>
       </div>
       

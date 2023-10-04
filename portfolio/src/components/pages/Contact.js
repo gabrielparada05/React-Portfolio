@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import emailjs from '@emailjs/browser';
+import '../../styles/style.css'
 
 // email sender 
 
@@ -83,18 +84,19 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative px-1 py-4">
-      <div className=" container flex justify-center flex-col text-center items-center mb-5">
-        <div className="text-center mb-5">
+      <div className=" container px-1 py-4 mx-auto text-center lg:px-40">
+        <div className="flex flex-col w-full mb-5">
         <h1 className="shadow1 text-4xl sm:text-5xl font-bold mb-4 text-blue-500 p-2">
             Contact Me 📧
           </h1>
           <p className="text-justify text-xl leading-8">
-          📞 On my contact page, you can easily reach out to me. Whether you have a project, a question, or just want to say hi, I'm here to chat. Feel free to use the contact form with your name, email, and message, and I'll get back to you soon! 👋📧
+          📞 On my contact page, you can easily reach out to me. Whether you have a project, a question, or just want to say hi, I'm here to chat. Feel free to use the contact form with your name, email, and message, and I'll get back to you soon! 👋
           </p>
         </div>
+        <div className='flex flex-col items-center'>
         <form onSubmit={handleSubmit}
           name="contact"
-          className="flex flex-col w-50">
+          className="form1">
 
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-lg text-gray-800">
@@ -140,7 +142,7 @@ export default function Contact() {
             />
           </div>
           {(!formik.dirty || !formik.isValid) && (
-            <div className="text-red-500">Please fill out all the fields.</div>
+            <div className="text-red-500 text-center">Please fill out all the fields</div>
           )}
           <button
             type="submit"
@@ -151,11 +153,12 @@ export default function Contact() {
             Submit
           </button>
         </form>
+        </div>
       </div>
 
       {showModal && (
-        <div className="modal" >
-          <div className="modal-content">
+        <div className="modal1" >
+          <div className="modal2">
             <h3>Email Sent Successfully!</h3>
             <button onClick={closeModal}>Close</button>
           </div>

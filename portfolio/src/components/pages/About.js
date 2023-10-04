@@ -3,9 +3,10 @@ import React from 'react';
 // import logo from '../../images/logo-png.png';
 import gabriel from '../../images/gabriel.jpg';
 
+
 export default function About() {
   return (
-    <section id="home" className=" py-16">
+    <section id="home" className="py-5 box-component">
       <div className="container mx-auto flex flex-col items-center space-y-8">
         {/* <img src={logo} alt="Logo" className="w-60" /> */}
 
@@ -29,7 +30,7 @@ export default function About() {
 
           
 
-          <p className="text-justify text-xl p-5 leading-8">
+          <p className="pl-3 text-justify text-xl leading-8 about">
           
           I'm a <span className="text-blue-500">dedicated professional</span> with a background in Social Services and a 
           Full Stack Bootcamp graduate from the University of Toronto. Passionate about creating

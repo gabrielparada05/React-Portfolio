@@ -47,9 +47,9 @@ export default function NavTabs() {
 
   return (
     <header className="bg-blue-800">
-      <nav className="header-nav bg-sky-300 shadow-lg fixed justify-center py-1 px-1 z-20 fixed top-0 w-full">
+      <nav className="header-nav bg-sky-300 shadow-lg fixed justify-center z-20 fixed top-0 w-full">
         <div className="navbar">
-          <ul className="flex items-center justify-start h-16">
+          <ul className="flex items-center justify-start h-16 p-0">
             <li>
               <button
                 onClick={() => scrollToSection('home')}

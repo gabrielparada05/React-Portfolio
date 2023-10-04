@@ -46,7 +46,7 @@ export default function Resume() {
           ))}
         </div>
       </div>
-      <div className='flex flex-row justify-center m-5'>
+      <div className='flex flex-row justify-center'>
         <button className="text-white bg-sky-300 border-0 py-2 px-6 focus:outline-none hover:bg-sky-600 rounded text-lg" onClick={onButtonClick}>
           Download my Resume
         </button>

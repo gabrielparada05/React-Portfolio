@@ -5,6 +5,7 @@ import About from './components/pages/About';
 import Resume from './components/pages/Resume';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
+import './styles/style.css'
 
 const App = () => {
   const scrollToTop = () => {
@@ -23,6 +24,7 @@ const App = () => {
       </div>
       <Routes>
         <Route path="/React-Portfolio" element={<PortfolioContainer />} />
+        <Route path="/" element={<PortfolioContainer />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />

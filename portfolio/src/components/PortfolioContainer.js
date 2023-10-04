@@ -5,7 +5,6 @@ import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './Footer';
-
 import '../styles/style.css';
 
 export default function PortfolioContainer() {
@@ -17,7 +16,7 @@ export default function PortfolioContainer() {
   };
 
   return (
-    <div id="home" className="bg-slate-50">
+    <div id="home">
       
       <NavTabs scrollToSection={scrollToSection} />
       <div className="content">
