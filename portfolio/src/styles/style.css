@@ -152,32 +152,39 @@
   /* On screens that are 640px or less */
   @media screen and (max-width: 640px) {
 
-  
-    .skill-box {
-      width: fit-content;
-  }
+  /* nav {
+    margin-right: 10px;
+  }  */
 
   ul{
     padding: 0px;
+    margin-right: 13px;
   }
 
+  p {
+    margin-left: 10px; 
+    margin-right: 10px;
+    text-align: justify;
+  }
+  
+  .skill-box {
+    width: fit-content;
+}
   .skill-box2 {
     display: flex;
     justify-content: center;
   ;
 }
 
-p {
-  margin-left: 10px; 
-  margin-right: 10px;
-  text-align: justify;
-}
+
  .form1 {
   width: 90%;
   text-align:left;
 }
 
-
+.about {
+  padding-left: 0;
+}
 
 
 
