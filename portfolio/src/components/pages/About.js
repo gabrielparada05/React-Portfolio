@@ -20,8 +20,8 @@ export default function About() {
         </div> */}
       </div>
       
-      <div className="container mx-auto flex flex-col lg:flex-row items-center text-center space-y-8 lg:space-y-0">
-        <img src={gabriel} alt="Description" className="w-1/2 lg:w-1/3 rounded-full" />
+      <div className="container container-about mx-auto flex flex-col lg:flex-row items-center text-center space-y-8 lg:space-y-0">
+        <img src={gabriel} alt="Description" className="w-1/2 lg:w-1/3 rounded-full sm:p-5" />
         
         <div className="text-lg w-full lg:w-2/3">
         <h1 className="shadow1 text-4xl sm:text-5xl font-bold mb-4 text-blue-500 p-2">

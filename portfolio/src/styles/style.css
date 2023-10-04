@@ -196,9 +196,14 @@
   text-align:left;
 }
 
+.container-about {
+  padding-top: 10px;
+}
 .about {
   padding-left: 0;
 }
+
+
 
 
   }
