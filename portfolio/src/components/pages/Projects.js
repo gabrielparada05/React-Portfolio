@@ -64,7 +64,7 @@ export default function Projects() {
                         </a> */}
 
                           <a
-                            href={project.link ? project.link : '#'}
+                            href={project.link || '#'}
                             key={project.image}
                             className={`sm:w-1/2 w-full p-2 md:p-0 relative ${!project.link && 'hidden'}`}
                           >
