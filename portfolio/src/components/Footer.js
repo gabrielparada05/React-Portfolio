@@ -11,7 +11,7 @@ export default function FooterRender() {
         <a href="https://github.com/gabrielparada05" className="text-blue-500 underline hover:text-blue-700">
           <img src={Github} alt="Logo Github" className="w-7 h-7 mr-4" />
         </a>
-        <a href="https://www.linkedin.com/in/gabriel-parada-moreno-78b8083b/" className="text-blue-500 underline hover:text-blue-700">
+        <a href="https://www.linkedin.com/in/gabriel-parada-78b8083b/" className="text-blue-500 underline hover:text-blue-700">
           <img src={Linkedin} alt="Logo Linkedin" className="w-8 h-15 ml-4" />
         </a>
       </div>
