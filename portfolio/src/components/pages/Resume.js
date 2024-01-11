@@ -13,7 +13,7 @@ export default function Resume() {
         // Setting various property values
         let alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'resume.pdf';
+        alink.download = 'resume_gp.pdf';
         alink.click();
       })
     })
