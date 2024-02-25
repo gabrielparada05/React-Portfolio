@@ -92,7 +92,7 @@ export const projects = [
       description:
         "This a website in production for a real company ",
       image: "/crud1.png",
-      link: "www.proyarservices.ca",
+      link: "https://www.proyarservices.ca",
       logoGit: "/github.png",
       logoWww: "/www.png",
     },
