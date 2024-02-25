@@ -32,7 +32,8 @@ export default function About() {
 
           <p className="pl-5 text-justify text-xl leading-8 about">
           
-          I'm a <span className="text-blue-500">dedicated professional</span> with a background in Social Services and a self-taught Full Stack developer. Passionate about creating
+          I'm a <span className="text-blue-500">dedicated professional</span> with a background in Social Services and Full Stack
+ graduate from the University of Toronto. Passionate about creating
            <span className="text-blue-500"> positive change</span>, I leverage my technical skills to craft
             <span className="text-blue-500">💡innovative solutions</span> for real-world challenges. When not working, 
             I enjoy life with my <span className="text-blue-500">two kids</span>, explore new travel destinations, 
