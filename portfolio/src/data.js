@@ -86,16 +86,16 @@ export const projects = [
       logoGit: "/github.png",
       logoWww: "/www.png",
     },
-      {
-      title: "Proyar Maintenance Services",
-      subtitle: "React/Bootstrap",
-      description:
-        "This a website in production for a real company ",
-      image: "/crud1.png",
-      link: "https://www.proyarservices.ca",
-      logoGit: "/github.png",
-      logoWww: "/www.png",
-    },
+      // {
+      // title: "Proyar Maintenance Services",
+      // subtitle: "React/Bootstrap",
+      // description:
+      //   "This a website in production for a real company ",
+      // image: "/crud1.png",
+      // link: "https://www.proyarservices.ca",
+      // logoGit: "/github.png",
+      // logoWww: "/www.png",
+    // },
   ];
   
   export const skills = [
